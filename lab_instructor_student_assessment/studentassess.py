@@ -1,9 +1,7 @@
-@author: Hadi
 
 #######################
 ########         This is a demo of student assessment
 #######################
-# Import libraries and modules
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
