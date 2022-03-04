@@ -134,11 +134,9 @@ class BreastCancer(object):
         
 
 
-
-if __name__ == '__main__':
-    brst_cancer_ml_model  = BreastCancer()
-    brst_cancer_ml_model.preprocess_df()
-    brst_cancer_ml_model.train_ML_models()
-    brst_cancer_ml_model.compute_performance_evals()
-    brst_cancer_ml_model.visualize_performance_eval()
-    brst_cancer_ml_model.cross_val_pred()
+brst_cancer_ml_model  = BreastCancer()
+brst_cancer_ml_model.preprocess_df()
+brst_cancer_ml_model.train_ML_models()
+brst_cancer_ml_model.compute_performance_evals()
+brst_cancer_ml_model.visualize_performance_eval()
+brst_cancer_ml_model.cross_val_pred()
