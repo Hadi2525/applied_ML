@@ -4,6 +4,7 @@ class BreastCancer(object):
     
     def __init__(self):
         from sklearn.datasets import load_breast_cancer
+        from sklearn.ensemble import RandomForestClassifier
         df = load_breast_cancer()
         self.df = df
         return
