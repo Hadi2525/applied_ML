@@ -12,7 +12,7 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
-          python train.py
+          python BC_ML.py
           
           echo "MODEL METRICS"
           
