@@ -117,6 +117,8 @@ class BreastCancer(object):
         from sklearn.model_selection import cross_val_predict
         import scikitplot as skplt
         import matplotlib.pyplot as plt
+        from sklearn.ensemble import RandomForestClassifier
+
         randomforest_cs = RandomForestClassifier(n_estimators=5, max_depth=5,
                                                  criterion='entropy',random_state=0)
         pred_LogisticRegression = cross_val_predict(randomforest_cs, self.features, self.target)
@@ -132,11 +134,9 @@ class BreastCancer(object):
         
 
 
-
-if __name__ == '__main__':
-    brst_cancer_ml_model  = BreastCancer()
-    brst_cancer_ml_model.preprocess_df()
-    brst_cancer_ml_model.train_ML_models()
-    brst_cancer_ml_model.compute_performance_evals()
-    brst_cancer_ml_model.visualize_performance_eval()
-    brst_cancer_ml_model.cross_val_pred()
+brst_cancer_ml_model  = BreastCancer()
+brst_cancer_ml_model.preprocess_df()
+brst_cancer_ml_model.train_ML_models()
+brst_cancer_ml_model.compute_performance_evals()
+brst_cancer_ml_model.visualize_performance_eval()
+brst_cancer_ml_model.cross_val_pred()
